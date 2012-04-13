@@ -1,6 +1,10 @@
 .container
   %h2 Places I can be found on the internet
-  .row
+  .row.grid
+    .span12
+      %a{:href => "http://github.com/twymer"}
+        %img.github-logo{:src => "images/github_logo_social_coding_outlined.png"}
+  .row.grid
     .span12
       %a{:href => "http://www.twitter.com/twymer"}
         %img{:src => "images/twitter.png"}
@@ -10,13 +14,10 @@
         %img{:src => "images/linkedin.png"}
       %a{:href => "http://news.ycombinator.com/user?id=twymer"}
         %img{:src => "images/hn.gif"}
-  .row
+  .row.grid
     .span12
       %a{:href => "http://projecteuler.net/"}
         %img{:src => "http://projecteuler.net/profile/Keeto.png"}
-  .row
-    .span12
-      %a{:href => "http://github.com/twymer"} Github Profile
 
 
   %h2 What I'm up to lately
