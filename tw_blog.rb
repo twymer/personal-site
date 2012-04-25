@@ -16,4 +16,8 @@ class TWBlog < Sinatra::Base
   get '/tw.css' do
     sass :tw
   end
+
+  get '/resume' do
+    redirect 'TylerWymerResume.pdf'
+  end
 end
