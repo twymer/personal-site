@@ -1,5 +1,27 @@
-.container
+.container.projects
   %h2 Project Highlights
+
+  %h3 Procedural Valleys and Game
+  %p
+    Another project for my procedural content class was to procedurally generate a terrain heightmap, add a valley and then allow a player to navigate through this. Obstacles and decorations were placed procedurally to give a more enjoyable game play experience.
+  %p
+    Notes:
+    %ul
+      %li Terrain is generated on load using modulated perlin noise.
+      %li Texture blending is used to provide a change in texture based on height and slope.
+      %li Obstacles are added at run time but sadly not all of them are textured.
+      %li Player can move the camera along the path but no collision detection is implemented yet.
+  %p
+    Info and code can be found
+    %a{:href => "https://github.com/twymer/valley-game"} here.
+  .row.pics
+    %a{:href => "images/works/788/valley_3.jpg"}
+      %img.span4{:src => "images/works/788/valley_3.jpg"}
+    %a{:href => "images/works/788/valley_1.jpg"}
+      %img.span4{:src => "images/works/788/valley_1.jpg"}
+    %a{:href => "images/works/788/valley_2.jpg"}
+      %img.span4{:src => "images/works/788/valley_2.jpg"}
+
   %h3 Town Map Generator
   %p
     For a class project I attempted to quickly generate procedural towns for RPG or Rogue-like type games. The application is still very rough and could use many improvements.
@@ -10,13 +32,9 @@
   %p
     More info, pictures and code can be found
     %a{:href => "https://github.com/twymer/town-gen"} here.
-
-  -#%h3 Procedural Valleys and Game
-  -#%p
-    -#Another project for my procedural content class was to generate a heightmap, add a valley and then allow a player to navigate through this. Obstacles and decorations were placed procedurally to give a more enjoyable game play experience.
-  -#%p
-    -#Info and code can be found
-    -#%a{:href => "https://github.com/twymer/valley-game"} here.
+  .pics
+    %a{:href => "images/works/788/town_gen.png"}
+      %img.big{:src => "images/works/788/town_gen.png"}
 
   %h3 Google AI Challenge
   %p
@@ -30,7 +48,7 @@
     %a{:href => "https://github.com/twymer/project-euler"} View the code
   %p
     %a{:href => "http://projecteuler.net/"}
-      %img{:src => "http://projecteuler.net/profile/Keeto.png"}
+      %img{:src => "images/works/project-euler.png"}
 
 
   %h3 Ray Tracing &mdash; CSE 681
@@ -46,7 +64,7 @@
     %a{:href => "images/works/681/simpletranslucency.jpg"}
       %img.span3{:src => "images/works/681/simpletranslucency.jpg"}
 
-  %h3 Advanced Game Development &mdash; CSE 786
+  %h3 "Lost Marbles" &mdash; Advanced Game Development &mdash; CSE 786
   %p
     My senior project was a game developed in a group of five. Our game was a platformer/puzzler where the player takes the role of an adventurous marble attempting to find someones "lost marbles." Details of our project can be found at
     %a{:href => "http://www.lupusoru.com/lostmarbles.html"} this site.
