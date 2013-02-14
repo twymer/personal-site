@@ -1,4 +1,9 @@
 class TWBlog < Sinatra::Base
+
+  configure :production do
+    require 'newrelic_rpm'
+  end
+
   get '/' do
     redirect '/about'
   end

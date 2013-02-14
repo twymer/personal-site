@@ -7,3 +7,5 @@ gem "rdiscount"
 gem "sass"
 
 gem "heroku"
+
+gem 'newrelic_rpm'
