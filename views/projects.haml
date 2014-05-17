@@ -1,6 +1,32 @@
 .container.projects
   %h2 Project Highlights
 
+  %h3 "Diamonds"
+  %p
+    I had some down time after my bike trip while looking for work, so I decided to clone an old game that I loved as a kid,
+    %a{:href => "https://en.wikipedia.org/wiki/Diamonds_%28video_game%29"} Diamonds
+    (by Varcon Systems, Inc.) using JavaScript as a way to learn more about the language.
+
+  %p
+    I chose one of the more minimal game libraries,
+    %a{:href => "https://github.com/craftyjs/Crafty"} Crafty JS,
+    to build this as I didn't want to "cheat" that much. I'd currently say that it is 90% done, though I know the last 10% would take longer than the rest to finish. I implemented most of the basic functionality and copied over many levels (using a level editor that I built), but really wanted to be able to play this on mobile. It sort of works on phones/tablets, depending on the platform, but I haven't figured out the right balance of slowing the game down, leaving room for thumbs, perfecting touch controls, etc to have it both fun and not completely impossible.
+
+  %p
+    %a{:href => "https://github.com/twymer/diamonds-js"} The code and instructions
+  %p
+    %a{:href => "http://www.tylerwymer.com/diamonds/index.html"} Play it here
+
+  .row.grid
+    %a{:href => "images/works/diamonds/simpleton.png"}
+      %img.span3{:src => "images/works/diamonds/simpleton.png"}
+    %a{:href => "images/works/diamonds/brackets.png"}
+      %img.span3{:src => "images/works/diamonds/brackets.png"}
+    %a{:href => "images/works/diamonds/locksmith.png"}
+      %img.span3{:src => "images/works/diamonds/locksmith.png"}
+    %a{:href => "images/works/diamonds/level_editor.png"}
+      %img.span3{:src => "images/works/diamonds/level_editor.png"}
+
   %h3 "Lost Marbles" &mdash; Advanced Game Development &mdash; CSE 786
   %p
     My senior project was a game developed in a group of five. Our game was a platformer/puzzler where the player takes the role of an adventurous marble attempting to find someones "lost marbles."
