@@ -25,4 +25,8 @@ class TWBlog < Sinatra::Base
   get '/resume' do
     redirect 'TylerWymerResume.pdf'
   end
+
+  get '/diamonds/?*' do
+    redirect 'http://twymer.github.io/diamonds-js/'
+  end
 end
