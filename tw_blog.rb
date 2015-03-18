@@ -18,10 +18,6 @@ class TWBlog < Sinatra::Base
     haml :projects
   end
 
-  get '/tw.css' do
-    sass :tw
-  end
-
   get '/resume' do
     redirect 'TylerWymerResume.pdf'
   end
